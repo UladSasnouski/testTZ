@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+.modal {
+  position: fixed;
+  pointer-events: none;
+  transition: 0.7s;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.container {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: rgb(255, 255, 255);
+}
+
+.chek {
+  pointer-events: none;
+  transition: 0.7s;
+  padding: 5px 10px;
+  margin: 2px;
+  background-color: rgba(255, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.chek p {
+  padding: 0;
+  margin: 0;
+  color: azure;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.chek.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.formContent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(207, 203, 203);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+}
+
+.formContent button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: azure;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+.formContent input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: azure;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+}
+
+.formContentFirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formContentLast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
