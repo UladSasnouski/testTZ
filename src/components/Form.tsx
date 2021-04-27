@@ -25,6 +25,9 @@ const Form: React.FC = observer(() => {
 
                 <div className={state.modal ? 'modal active' : 'modal'} onClick={() => state.close()}>
                     <div className='container' onClick={e => e.stopPropagation()}>
+                        <div className='btn'>
+                            <button onClick={() => state.close()}>⤬</button>
+                        </div>
                         <div>
                             <h1>Здравствуйте {state.first} {state.last}</h1>
                         </div>
